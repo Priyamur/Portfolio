@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --primary-color: #8659b6;
+  --secondary-color: #2575fc;
+  --text-color: #131212;
+  --accent-color: rgb(221, 123, 85);
+  --background-overlay: rgba(226, 218, 218, 0.7);
+  }
+
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .resume-wrapper {
+    min-height: 100vh;
+    /* background-image: url('path/to/your/background-image.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
+  }
+  
+  .resume-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: var(--background-overlay);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: slideInUp 1s ease-out;
+  }
+  
+  .name {
+    font-size: 3rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
+  .title {
+    color: var(--accent-color);
+    font-weight: normal;
+    margin-bottom: 1rem;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  .contact-item svg {
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+    animation: slideInUp 1s ease-out;
+  }
+  
+  .section-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list li {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+  }
+  
+  @media (max-width: 768px) {
+    .resume-container {
+      padding: 2rem;
+    }
+  
+    .name {
+      font-size: 2.5rem;
+    }
+  }

@@ -1,0 +1,134 @@
+:root {
+  --primary-color: #8659b6;
+  --secondary-color: #2575fc;
+  --text-color: #131212;
+  --accent-color: rgb(221, 123, 85);
+  --background-overlay: rgba(226, 218, 218, 0.7);
+}
+
+.experienceWrapper {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+}
+
+.experienceContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: var(--background-overlay);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInDown 1s ease-out;
+}
+
+.section {
+  margin-bottom: 3rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.sectionTitle {
+  color: var(--accent-color);
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 1rem;
+  color: var(--secondary-color);
+}
+
+.experienceItem {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease;
+}
+
+.experienceItem:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 48px 0 rgba(31, 38, 135, 0.5);
+}
+
+.company, .projectTitle {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.role {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.duration {
+  font-style: italic;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.techStack {
+  color: var(--accent-color);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .experienceContainer {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .company, .projectTitle {
+    font-size: 1.5rem;
+  }
+}
