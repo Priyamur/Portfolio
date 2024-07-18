@@ -10,6 +10,7 @@ const Home = () => {
       <Navbar/>
       <div className="homeContainer">
         <header className="header">
+            <br></br>
           <h1 className="title">Welcome to My Portfolio</h1>
           <h2 className="subtitle">Priyadharshini Murugan - Trainee Software Engineer</h2>
         </header>

@@ -31,7 +31,7 @@ const Landing = () => {
           <img src={priya} alt="Priyadharshini Murugan" className="avatar" />
         </div>
         <div className="rightContent">
-          <h1 className="name">
+          <h1 className="name" style={{marginright:"550px"}}>
             Hi! I am{' '}
             {name.split('').map((letter, index) => (
               <span key={index} className={`jumpingLetter ${animated ? 'animate' : ''}`} style={{animationDelay: `${index * 0.1}s`}}>

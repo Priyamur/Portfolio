@@ -3,7 +3,7 @@ import { FaCode, FaDatabase, FaHtml5, FaCss3Alt, FaJs, FaJava, FaReact } from 'r
 import { SiCsharp, SiMysql } from 'react-icons/si';
 import '../Styles/Skills.css';
 import Navbar from '../Components/Navbar';
-import portfolioback from '../Images/portfolioback.avif';
+import portfolioback from '../Images/portfolioback.avif'; // Import your background image
 
 const skills = [
   { name: 'C#', icon: <SiCsharp />, level: 90 },
@@ -21,7 +21,7 @@ const Skills = () => {
     <div className="skills-wrapper" style={{backgroundImage: `url(${portfolioback})`}}>
       <Navbar/>
       <div className="skills-container">
-        <h2 className="skills-title">My Technical Arsenal</h2>
+        <h2 className="title">My Technical Arsenal</h2>
         <div className="skill-grid">
           {skills.map((skill, index) => (
             <div className="skill-item" key={index}>
